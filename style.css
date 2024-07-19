@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    display: grid;
+    justify-content: center;
+    color: white;
+    background-color:  hsla(0, 0%, 100%, 0.75);
+}
+.card{
+    display: grid;
+    justify-content: center;
+    margin-top: 10rem;
+    width: 26.6rem;
+    height: 114rem;
+    border-radius: 3rem;
+}
+.one{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 0.5rem 0.5rem 0 0;
+    width: 26.6rem;
+    height: 38rem;
+}
+.two{
+    background-color: hsl(184, 100%, 22%);
+    width: 26.6rem;
+    height: 38rem;
+}
+.three{
+    background-color:  hsl(179, 100%, 13%);
+    border-radius: 0 0 0.5rem 0.5rem;
+    width: 26.6rem;
+    height: 38rem;
+}
+img{
+    padding: 5rem;
+}
+h1,h2,h3{
+    position: relative;
+    padding-left: 5rem;
+    bottom: 3rem;
+    font-size: 4rem;
+    font-family: big shoulders display;
+    font-weight: 700;
+}
+p{
+    position: relative;
+    bottom: 2rem;
+    font-size: 1.1rem;
+    padding-left: 5rem;
+    font-family: Lexend Deca;
+    font-weight: 200;
+    line-height: 2;
+}
+.one button {
+    color: hsl(31, 77%, 52%);
+    border-radius: 5rem;
+    border: none;
+    position: relative;
+    left: 3rem;
+    min-width: 15rem;
+    height: 5rem;
+    font-size: 1.5rem;
+}
+.two button{
+    color: hsl(184, 100%, 22%);
+    border-radius: 5rem;
+    border: none;
+    position: relative;
+    left: 3rem;
+    min-width: 15rem;
+    height: 5rem;
+    font-size: 1.5rem;
+}
+.three button{
+    color: hsl(179, 100%, 13%);
+    border-radius: 5rem;
+    border: none;
+    position: relative;
+    left: 3rem;
+    min-width: 15rem;
+    height: 5rem;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 600px){
+    .card{
+        display: flex;
+        flex-direction: row;
+        width: 80rem;
+        height: 45rem;
+    }
+    .one{
+        height: 45rem;
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+    .two{
+        height: 45rem;
+    }
+    .three{
+        height: 45rem;
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+    .one button{
+        top: 5rem;
+        left: 4rem;
+    }
+    .two button{
+        top: 5rem;
+        left: 4rem;
+    }
+    .three button{
+        top: 5rem;
+        left: 4rem;
+    }
+}
